@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const b = parseFloat(document.getElementById('b').value);
             const c = parseFloat(document.getElementById('c').value);
             const res = await calculate({ a, b, c });
-            if(res.root1){
+            if(res.root1 && res.root2){
                 root1.value = res.root1;
                 root2.value = res.root2;
             }else{
